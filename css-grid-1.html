@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid</title>
+    <style>
+        body {
+            max-width: 1600px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+            padding: 20px;
+        }
+        .container__div_1 {
+            background-color: red;
+        }
+        .container__div_2 {
+            background-color: orange;
+        }
+        .container__div_3 {
+            background-color: yellow;
+        }
+        .container__div_4 {
+            background-color: green;
+        }
+        .container__div_5 {
+            background-color: blue;
+        }
+        .container__div_6 {
+            background-color: indigo;
+        }
+        /* .container__div_7 {
+            background-color: violet;
+        } */
+        .container {
+            display: grid;
+            /* grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px 50px; */
+            grid-template-columns: 100px auto;
+            grid-template-rows: 50px 50px 200px;
+            grid-gap: 3px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__div_1">1</div>
+        <div class="container__div_2">2</div>
+        <div class="container__div_3">3</div>
+        <div class="container__div_4">4</div>
+        <div class="container__div_5">5</div>
+        <div class="container__div_6">6</div>
+        <!-- <div class="container__div_7">7</div> -->
+    </div>
+</body>
+</html>

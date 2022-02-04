@@ -1,0 +1,38 @@
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 20px;
+}
+.container__div_1 {
+    background-color: red;
+}
+.container__div_2 {
+    background-color: orange;
+}
+.container__div_3 {
+    background-color: yellow;
+}
+.container__div_4 {
+    background-color: green;
+}
+.container__div_5 {
+    background-color: blue;
+}
+.container__div_6 {
+    background-color: indigo;
+}
+.container {
+    display: grid;
+    /* First method */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+     /* Second method */
+    /* grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 150px); */
+    /* Third method */
+    grid-template: repeat(2, 150px) / repeat(3, 1fr);
+    grid-gap: 4px 8px;
+}
